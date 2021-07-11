@@ -2,6 +2,8 @@
 
 **This plugin was made using PHPStorm and can only be used for PM3.**
 
+##This plugin needs the PiggyCustomEnchants in this respiratory in order to function properly!
+
 ## Plugin Commands:
 
 */ceshop*
