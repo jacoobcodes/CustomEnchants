@@ -15,4 +15,12 @@
 */tinkerer*
 **This opens a menu where you can put enchanted items in return for custom enchant dust.**
 
+*/dust*
+**This allows you to give other players custom enchant dust.**
+
+*/scroll*
+**This allows you to give other players white scrolls, black scrolls, transmog scrolls, and enchantment orbs.**
+
+**Have any other questions? Contact me via discord at jacooob#0001 or create an issue.**
+
 
