@@ -21,6 +21,4 @@
 */scroll*
 **This allows you to give other players white scrolls, black scrolls, transmog scrolls, and enchantment orbs.**
 
-**Have any other questions? Contact me via discord at jacooob#0001 or create an issue.**
-
 
