@@ -1,0 +1,109 @@
+# Throughout this config, the symbol & can be used for color codes
+
+# Set the XP Cost for each rarity here.
+# This is raw XP Cost, not in levels.
+simple: 200
+unique: 200
+elite: 200
+ultimate: 200
+legendary: 200
+soul: 200
+heroic: 200
+mastery: 200
+
+# Set the max enchant limit without having an enchant orb here
+max-enchants: 8
+
+# Sets the amount of dust the tinkerer should give per enchant on the item.
+tinkerer-per-enchant: 1
+
+# This is the blackscroll which removes a random custom enchant from an item
+# and returns it in the form of a book with the success rate of the blackscroll.
+blackscroll:
+  # This is the ID of the item used as a blackscroll. The default is an ink sac
+  id: 351
+  # This is the name of the item of the blackscroll.
+  name: "&l&8Black Scroll"
+  # This is the description of the item or the lore. {SUCCESS} replaces the blackscroll's success rate.
+  lore:
+    - "&7This scroll can be used to remove a random CE from an item"
+    - "&7and receive it in the form of a book"
+    - ""
+    - "&6Success Rate: &a{SUCCESS}%"
+  # This shows whether the item should have an enchant glint.
+  glint: false
+
+# This is the whitescroll which prevents an item from being destroyed
+# if a CE book fails to apply
+whitescroll:
+  # This is the ID of the item used as a whitescroll. The default is an empty map
+  id: 395
+  # This is the name of the item of the whitescroll.
+  name: "&l&fWhite Scroll"
+  # This is the description of the item or the lore.
+  lore:
+    - "&7This scroll protects an item from being destroyed if"
+    - "&7a CE book fails to apply and destroy's the item instead."
+    - ""
+    - "&fThe item loses its protection on use."
+  # This shows whether the item should have an enchant glint.
+  glint: false
+
+# This is the transmog scroll which orders all the enchants on the item
+# in order of their rarity
+transmogscroll:
+  # This is the ID of the item used as a transmog scroll. The default is Paper
+  id: 339
+  # This is the name of the item of the transmog scroll.
+  name: "&l&aTransmog Scroll"
+  # This is the description of the item or the lore.
+  lore:
+    - "&7This item orders all the enchants on your item by rarity"
+    - "&7and adds an enchant count to the name of your item."
+  # This shows whether the item should have an enchant glint.
+  glint: false
+
+# This is the enchant dust which increases the success rate of a CE book
+# by the amount mentioned in the dust
+enchantdust:
+  # This is the ID of the item used as enchant dust. The default is glowstone dust
+  id: 339
+  # This is the name of the item of the enchant dust.
+  name: "&l&bEnchantment Dust"
+  # This is the description of the item or the lore. {PERCENT} is replaced by the percentage increase it gives.
+  lore:
+    - " "
+    - "&7Apply this item onto a CE book to increase"
+    - "it's success rate by &a{PERCENT}%"
+  # This shows whether the item should have an enchant glint.
+  glint: false
+
+# This is the weapon orb which increases the max applicable enchants
+# on a weapon to the one in the weapon orb
+weaponorb:
+  # This is the ID of the item used as weapon orb. The default is the Eye of Ender
+  id: 381
+  # This is the name of the item of the weapon orb.
+  name: "&l&6Weapon Orb"
+  # This is the description of the item or the lore. {TIER} is replaced by the tier of the weapon orb
+  lore:
+    - " "
+    - "&7Apply this item onto a weapon to increase"
+    - "&7the max enchant slots on it to &a{TIER}"
+  # This shows whether the item should have an enchant glint.
+  glint: false
+
+# This is the armor orb which increases the max applicable enchants
+# on armor to the one in the armor orb
+armororb:
+  # This is the ID of the item used as weapon orb. The default is the Eye of Ender
+  id: 381
+  # This is the name of the item of the armor orb
+  name: "&l&6Armor Orb"
+  # This is the description of the item or the lore. {TIER} is replaced by the tier of the armor orb
+  lore:
+    - " "
+    - "&7Apply this item onto armor to increase"
+    - "&7the max enchant slots on it to &a{TIER}"
+  # This shows whether the item should have an enchant glint.
+  glint: false
