@@ -21,4 +21,6 @@
 */scroll*
 **This allows you to give other players white scrolls, black scrolls, transmog scrolls, and enchantment orbs.**
 
+*/givebook*
+**This allows you to give other players books of any rarity.**
 
