@@ -1,7 +1,0 @@
-name: CosmicEnchants
-main: Heisenburger69\CosmicEnchants\Main
-version: 0.0.6
-api: 3.0.0
-author: Heisenburger69
-description: Plugin implementing a CosmicPvP like enchanting system wrapped around PCE
-website: https://github.com/Heisenburger69
