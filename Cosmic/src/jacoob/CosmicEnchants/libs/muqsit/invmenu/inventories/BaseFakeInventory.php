@@ -20,7 +20,7 @@
 namespace jacoob\CosmicEnchants\libs\muqsit\invmenu\inventories;
 
 use InvalidStateException;
-use Heisenburger69\CosmicEnchants\libs\muqsit\invmenu\InvMenu;
+use jacoob\CosmicEnchants\libs\muqsit\invmenu\InvMenu;
 use jacoob\CosmicEnchants\libs\muqsit\invmenu\InvMenuHandler;
 use jacoob\CosmicEnchants\libs\muqsit\invmenu\tasks\DelayedFakeBlockDataNotifyTask;
 use jacoob\CosmicEnchants\libs\muqsit\invmenu\utils\HolderData;
