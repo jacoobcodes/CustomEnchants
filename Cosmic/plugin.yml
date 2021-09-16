@@ -1,6 +1,6 @@
 name: CosmicEnchants
 main: jacoob\CosmicEnchants\Maine
-version: 0.0.6
+version: 0.0.7
 api: 3.0.0
 author: jacoob
 description: Plugin implementing a CosmicPvP like enchanting system wrapped around PCE
