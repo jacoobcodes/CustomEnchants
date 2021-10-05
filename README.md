@@ -24,3 +24,4 @@
 */givebook*
 **This allows you to give other players books of any rarity.**
 
+Please feel free to star this respiratory or if you have any issues open a issue.
