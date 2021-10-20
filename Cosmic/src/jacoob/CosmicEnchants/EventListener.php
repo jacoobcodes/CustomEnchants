@@ -343,7 +343,7 @@ class EventListener implements Listener
                 if (empty($enchants)) {
                     return;
                 }
-                $enchants = Utils::filterDisplayedEnchants($enchants);
+                $enchants = Utils::filterDisplayedEnchants($itemClicked);
                 $itemClicked->removeEnchantments();
                 foreach ($enchants as $enchant) {
                     $itemClicked->addEnchantment($enchant);

@@ -31,6 +31,7 @@ class GiveBookCommand extends PluginCommand
         parent::__construct("cebook", $plugin);
         $this->setPermission("cosmic.cebook");
         $this->setUsage("/cebook <type> <amount> <player>");
+        $this->setDescription("§bAdmin Command.");
     }
 
     public function execute(CommandSender $sender, string $label, array $args)

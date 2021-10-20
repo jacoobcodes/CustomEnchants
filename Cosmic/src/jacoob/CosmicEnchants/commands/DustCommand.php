@@ -24,6 +24,7 @@ class DustCommand extends PluginCommand
         parent::__construct("dust", $plugin);
         $this->setPermission("cosmic.dust");
         $this->setUsage("/dust <percentage> <player>");
+        $this->setDescription("§bAdmin Command.");
     }
 
     public function execute(CommandSender $sender, string $label, array $args)
@@ -43,7 +44,7 @@ class DustCommand extends PluginCommand
             return;
         }
         $percentage = (int)$args[0];
-        $dust = $this->plugin->enchantFactory->giveCEBook();
+        $dust = $this->plugin->enchantFactory->getEnchantDust();
         $player->getInventory()->addItem($dust);
     }
 }

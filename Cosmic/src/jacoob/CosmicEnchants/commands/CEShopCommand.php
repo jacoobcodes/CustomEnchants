@@ -29,6 +29,7 @@ class CEShopCommand extends PluginCommand
         $this->plugin = $plugin;
         parent::__construct("ceshop", $plugin);
         $this->setUsage("/ceshop");
+        $this->setDescription("Access the custom enchants shop.");
     }
 
     public function execute(CommandSender $sender, string $label, array $args)
@@ -45,7 +46,6 @@ class CEShopCommand extends PluginCommand
             $form->addButton(Utils::getColorFromRarity(CustomEnchant::RARITY_LEGENDARY) . C::BOLD . "Legendary");
             $form->addButton(Utils::getColorFromRarity(CustomEnchant::RARITY_SOUL) . C::BOLD . "Soul");
             $form->addButton(Utils::getColorFromRarity(CustomEnchant::RARITY_HEROIC) . C::BOLD . "Heroic");
-            $form->addButton(Utils::getColorFromRarity(CustomEnchant::RARITY_MASTERY) . C::BOLD . "Mastery");
             $sender->sendForm($form);
             return;
         }
@@ -68,19 +68,19 @@ class CEShopCommand extends PluginCommand
                         $player->getInventory()->addItem($item);
                         $player->subtractXp($xpPrice);
                     } else {
-                        $player->sendMessage(C::RED . "You do not have enough Inventory Space to buy " . C::AQUA . $amount . C::RED . " books");
+                        $player->sendMessage(C::YELLOW . "You do not have enough Inventory Space to buy " . C::GOLD . $amount . C::YELLOW . " books");
                         return;
                     }
-                    $player->sendMessage(C::GREEN . "Successfully purchased " . C::AQUA . $amount . C::GREEN . " books for " . C::AQUA . $xpPrice . "XP");
+                    $player->sendMessage(C::YELLOW . "Successfully purchased " . C::GOLD . $amount . C::YELLOW . " books for " . C::GOLD . $xpPrice . "XP");
                 } else {
-                    $player->sendMessage(C::RED . "You do not have enough XP to buy $amount Books.\n" . C::AQUA . "Required XP: " . C::GREEN . $xpPrice);
+                    $player->sendMessage(C::YELLOW . "You do not have enough XP to buy $amount Books.\n" . C::GOLD . "Required XP: " . C::YELLOW . $xpPrice);
                 }
             }
         });
         $form->setTitle(Utils::getColorFromRarity($rarity) . C::BOLD . $this->plugin->rarityToName($rarity));
-        $form->addLabel(C::GREEN . "How many books do you want to purchase?");
-        $form->addLabel(C::AQUA . "Cost Per Book: $cost XP");
-        $form->addSlider(C::GREEN . "Amount", 1, 64, 1);
+        $form->addLabel(C::YELLOW . "How many books do you want to purchase?");
+        $form->addLabel(C::GOLD . "Cost Per Book: $cost XP");
+        $form->addSlider(C::YELLOW . "Amount", 1, 64, 1);
         $player->sendForm($form);
     }
 
@@ -102,7 +102,7 @@ class CEShopCommand extends PluginCommand
             case 6:
                 return 7;
             case 7:
-                return 10;
+                return 8;
         }
         return null;
     }
@@ -124,7 +124,7 @@ class CEShopCommand extends PluginCommand
                 return $this->plugin->getConfig()->get("soul");
             case 7:
                 return $this->plugin->getConfig()->get("heroic");
-            case 10:
+            case 8:
                 return $this->plugin->getConfig()->get("mastery");
         }
         return null;

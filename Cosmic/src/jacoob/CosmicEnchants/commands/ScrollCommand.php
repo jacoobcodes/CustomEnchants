@@ -25,6 +25,7 @@ class ScrollCommand extends PluginCommand
         parent::__construct("scroll", $plugin);
         $this->setPermission("cosmic.scroll");
         $this->setUsage("/scroll <black/armor/white/weapon/transmog> <player> <percentage/tier>");
+            $this->setDescription("§bAdmin Command.");
     }
 
     public function execute(CommandSender $sender, string $label, array $args)

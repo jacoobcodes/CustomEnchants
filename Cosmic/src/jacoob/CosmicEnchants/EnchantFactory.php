@@ -46,6 +46,7 @@ class EnchantFactory
                 C::RESET . C::GRAY . "Drag n' Drop onto item to enchant."
             ]);
         }
+        $book->setNamedTagEntry(new ListTag("ench"));
         $book->setNamedTagEntry(new IntTag("enchantbook", $enchantId));
         $book->setNamedTagEntry(new IntTag("levelbook", $level));
         $book->setNamedTagEntry(new IntTag("successbook", $success));

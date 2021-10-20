@@ -27,6 +27,7 @@ class GiveXpCommand extends PluginCommand
         parent::__construct("givexp", $plugin);
         $this->setUsage("/givexp <player> <amount>");
         $this->setPermission("givexp.command");
+        $this->setDescription("§bAdmin Command.");
     }
 
     public function execute(CommandSender $sender, string $label, array $args)

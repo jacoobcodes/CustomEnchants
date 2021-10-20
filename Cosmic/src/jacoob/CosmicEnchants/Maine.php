@@ -58,7 +58,7 @@ class Maine extends PluginBase
                 return "Soul";
             case 7:
                 return "Heroic";
-            case 10:
+            case 8:
                 return "Mastery";
         }
         return null;

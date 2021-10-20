@@ -28,7 +28,7 @@ class TinkerCommand extends PluginCommand
         $this->plugin = $plugin;
         parent::__construct("tinker", $plugin);
         $this->setUsage("/tinker");
-        $this->setDescription("Tinker items with enchantments in exchange for enchant dust!");
+        $this->setDescription("§bTinker items with enchantments in exchange for enchant dust!");
     }
 
     public function execute(CommandSender $sender, string $label, array $args)
